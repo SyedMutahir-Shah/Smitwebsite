@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Image Slider</title>
+  <link rel="stylesheet" href="saylani.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+</head>
+<body>
+
+  <!-- Top bar with black background -->
+  <div class="top-bar">
+    Free shipping on orders over $75. Free returns
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <!-- Left side items (Men, Women, Socks, Sale) -->
+      <div class="nav-left">
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Socks</a></li>
+          <li class="sale"><a href="#">Sale</a></li> <!-- Sale in red and bold -->
+        </ul>
+      </div>
+      
+      <!-- Allbirds text logo in the center -->
+      <div class="logo">
+        Allbirds
+      </div>
+      
+      <!-- Right side items (Sustainability, ReRun, Stores) -->
+      <div class="nav-right">
+        <div class="options">
+          <ul>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">ReRun</a></li>
+            <li><a href="#">Stores</a></li>
+          </ul>
+        </div>
+
+        <!-- Icons (Search, Profile, Cart) -->
+        <div class="icons">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sub-navbar for Men's Shoes, Women's Shoes, New Arrivals -->
+  <div class="sub-navbar">
+    <ul>
+      <li><a href="#">Men's Shoes</a></li>
+      <li><a href="#">Women's Shoes</a></li>
+      <li><a href="#">New Arrivals</a></li>
+    </ul>
+  </div>
+
+  <!-- Image Slider Section -->
+  <div class="slider">
+    <div class="slides">
+      <div class="slide"><img src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_1344/cms/5laY82rREysPQM3Ul4paK6/61e88f9f23b685a37567fd5b21facff0/25Q1_BackToNature_TreeDasher2_Black_Site_HomepageHero_Desktop_Slide_04_2880x1245.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_1344/cms/6NplRvb6QX4Xud7HHGspfN/4db2e9acbce70a678b18119633ff7a2d/25Q1_BackToNature_MediumGrey_Site_HomepageHero_Desktop_Slide_02_UK_2880x1245.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_1344/cms/59y99xfuAGNzVootnzQheV/18c32baa9457c390d95479a34ba7c209/25Q1_BackToNature_TreeGlider_MediumGrey_Site_HomepageHero_Desktop_Slide_01_UK_2880x1245.jpg" alt="Image 3"></div>
+    </div>
+
+    <!-- Left & Right Arrows -->
+    <div class="slider-buttons">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Text Overlay -->
+    <div class="text-overlay">
+      <div class="heading">Let Comfort <br>
+        Take You Places</div>
+      <div class="sub-heading">two light bouncy sneaks. countless <br>
+        Reasons to get outside and reset.</div>
+    </div>
+
+    <!-- Buttons below the text -->
+    <div class="button-container">
+      <button class="button">Shop Men</button>
+      <button class="button">Shop Women</button>
+    </div>
+  </div>
+
+  <!-- Three Images Below the Slider -->
+  <div class="three-images">
+    <div class="image-container">
+      <img src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_1467/cms/vX5umsA7a876gf0UOxCvq/ac2742e74ea5aef7cd502c5371733634/25Q1_January_BAU_Site_TriPanel_1200x1500_01.png" alt="Image 1">
+      <div class="image-text">Tree Glider <br>Sleek, Springy Athleisure Style</div>
+    </div>
+    <div class="image-container">
+      <img src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_1467/cms/72c6hXdIHZScAlYm0TerAW/f08d0353b38197585a81fec756f58be3/25Q1_January_BAU_Site_TriPanel_1200x1500_02.png" alt="Image 2">
+      <div class="image-text">Tree Runner <br>Breezy, Lightweight Sneaker</div>
+    </div>
+    <div class="image-container">
+      <img src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_1467/cms/5HAnRV2GBY8OsYqTjsdCl3/b11a4a76304189e828fe2fc7900974e3/25Q1_January_BAU_Site_TriPanel_1200x1500_03.png" alt="Image 3">
+      <div class="image-text">Tree Glider <br> Bouncy, Everyday Active Sneaker</div>
+    </div>
+  </div>
+
+  <!-- New Single Image Below the Three Images -->
+  <div class="single-image-container">
+    <div class="image-container">
+      <img src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_1493/cms/3gaucwAUA2KXTW2QeloccX/02d479630932580eb29bc1329e0ec6fd/24Q3_AugustCore_Statement_Module_Site_Desktop_IMG_2880x720.jpg" alt="New Image">
+      <div class="image-text"><h1>We Make Better Things In A Better Way</h1> <br> By looking to the world’s greatest innovator—Nature—we create shoes that deliver unrivaled comfort that you feel good in and feel good about. <br> All birds by nature </div>
+    </div>
+  </div>
+
+<div class="footer">
+  <div class="1starea">
+    <p>Help <br>
+      1-888-963-8944 <br>
+      1-814-251-9966 (Text) <br>
+      help@allbirds.com <br>
+      Returns/Exchanges <br>
+      FAQ/Contact Us <br>
+      Afterpay</p>
+  </div>
+  <div class="3rtarea">
+    <p>Help <br>
+      1-888-963-8944 <br>
+      1-814-251-9966 (Text) <br>
+      help@allbirds.com <br>
+      Returns/Exchanges <br>
+      FAQ/Contact Us <br>
+      ksks <br>
+      Afterpay</p>
+  </div>
+  <div class="2ntarea">
+    <p>Help <br>
+      1-888-963-8944 <br>
+      1-814-251-9966 (Text) <br>
+      help@allbirds.com <br>
+      Returns/Exchanges <br>
+      hshs <br>
+      jsbs <br>
+      FAQ/Contact Us <br>
+      jksjd <br>
+      Afterpay</p>
+  </div>
+
+</div>
+
+
+</body>
+</html>
